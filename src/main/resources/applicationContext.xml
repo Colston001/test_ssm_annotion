@@ -29,4 +29,5 @@
         <property name="basePackage" value="org.lanqiao.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
+
 </beans>

@@ -15,13 +15,13 @@ import org.springframework.stereotype.Component;
 @NoArgsConstructor
 @Component
 public class ResultInfo {
-    private String status;
-    private String message;
+    private Integer status;
+    private String msg;
     private Object data;
 
-    public ResultInfo(String status, String message){
+    public ResultInfo(Integer status, String msg){
         this.status = status;
-        this.message = message;
+        this.msg = msg;
     }
 
 }

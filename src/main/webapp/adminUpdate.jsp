@@ -113,9 +113,11 @@
                 type: 'post',
                 data: $("#form1").serialize(),
                 success: function (data1) {
-                    if (data1 == 200) {
-                        layer.msg("修改成功");
-                    } else layer.msg("修改失败")
+                    // console.log(data1);
+                    // if (data1.status == 200) {
+                    //     layer.msg(data1.msg);
+                    // } else layer.msg("修改失败")
+                    layer.msg(data1.msg);
                 }
             })
             return false; // 阻止默认 form 跳转

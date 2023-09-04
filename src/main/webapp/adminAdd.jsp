@@ -112,9 +112,11 @@
                 type: 'post',
                 data: $("#form1").serialize(),
                 success: function (data1) {
-                    console.log(data1)
-                    if (data1 == 200) layer.msg("添加成功")
-                    else layer.msg("添加失败")
+                    // console.log(data1);
+                    // console.log(data1.status);
+                    // if (data1.status == 200) layer.msg("添加成功")
+                    // else layer.msg("添加失败")
+                    layer.msg(data1.msg);
                 }
             })
             return false; // 阻止默认 form 跳转

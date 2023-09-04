@@ -3,14 +3,12 @@ package org.lanqiao.service;
 import org.lanqiao.entity.Admin;
 import org.lanqiao.util.ResultInfo;
 
-import java.util.List;
-
 public interface AdminService {
-    Admin login(Admin admin);
-    Integer addAdmin(Admin admin);
+    ResultInfo login(Admin admin);
+    ResultInfo addAdmin(Admin admin);
     ResultInfo adminList();
-    List<Admin> adminListBy(Admin admin);
-    Integer deleteAdmin(Integer id);
-    Integer updateAdmin(Admin admin);
+    ResultInfo adminListBy(Admin admin);
+    ResultInfo deleteAdmin(Integer id);
+    ResultInfo updateAdmin(Admin admin);
 
 }
