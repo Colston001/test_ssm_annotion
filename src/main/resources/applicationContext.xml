@@ -13,7 +13,7 @@
         http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
 ">
-    <context:component-scan base-package="org.lanqiao"/>
+    <context:component-scan base-package="org.lanqiao.service"/>
     <context:property-placeholder location="classpath:jdbc.properties"/>
     <bean id="DruidDataSource" class="com.alibaba.druid.pool.DruidDataSource" >
         <property name="driverClassName" value="${jdbc.driver}"/>

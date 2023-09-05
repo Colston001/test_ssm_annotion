@@ -22,9 +22,6 @@ public class loginInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         System.out.println(request.getRequestURI());
-//        if(request.getRequestURI().contains("/login.jsp") || request.getRequestURI().endsWith("checklogin.do")){
-//           return true;
-//       }
         if(request.getSession().getAttribute("admin") == null){
             System.out.println(request.getSession().getAttribute("admin"));
             response.sendRedirect("/login.jsp");

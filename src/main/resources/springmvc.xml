@@ -24,11 +24,13 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-<!--    <mvc:interceptors>-->
-<!--        <mvc:interceptor>-->
-<!--            <mvc:mapping path="/**"/>-->
-<!--            <mvc:exclude-mapping path="/admin/checklogin.do"/>-->
-<!--            <bean class="org.lanqiao.listener.OnlineListener"></bean>-->
-<!--        </mvc:interceptor>-->
-<!--    </mvc:interceptors>-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <mvc:exclude-mapping path="/admin/checklogin.do"/>
+            <mvc:exclude-mapping path="/admin/exit.do"/>
+            <bean class="org.lanqiao.interceptor.loginInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
 </beans>
